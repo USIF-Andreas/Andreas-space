@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yousef Malak Ibrahim | AI Engineer Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- AI Chatbot Widget -->
+    <link rel="stylesheet" href="chatbot/chatbot-widget.css">
+</head>
+<body>
+    <!-- Cursor Glow -->
+    <div id="cursor-glow"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particles"></canvas>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-y">Y</span>MI
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-bg-gradient"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="hero-name">Yousef Malak Ibrahim</span>
+                    <span class="title-line">AI Engineer & ML Developer</span>
+                </h1>
+                <p class="hero-subtitle">
+                    I build intelligent systems that bridge the gap between cutting-edge AI research 
+                    and real-world impact. From multi-agent architectures to production-grade ML pipelines, 
+                    I turn complex problems into elegant solutions.
+                </p>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="CV_Yousef_Malak_ibrahim.pdf" class="btn btn-outline" download>
+                        <i class="fas fa-download"></i>
+                        <span>Download CV</span>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-target="15">0</span>+
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat">
+                        <span class="stat-number" data-target="99">0</span>%
+                        <span class="stat-label">AI Certification</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="profile-image-container">
+                    <img src="profile.png" alt="Yousef Malak Ibrahim" class="profile-image">
+                    <div class="glow-effect"></div>
+                </div>
+                <!-- Floating elements behind image -->
+                <div class="floating-badge badge-1">
+                    <i class="fas fa-brain"></i> AI Agents
+                </div>
+                <div class="floating-badge badge-2">
+                    <i class="fas fa-code"></i> AI Backend
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get To Know Me</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-wrapper">
+                    <div class="about-image-container">
+                        <div class="about-image-placeholder">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>YMI</span>
+                        </div>
+                        <div class="image-border-glow"></div>
+                    </div>
+                    <div class="about-quick-info">
+                        <div class="quick-info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Maadi, Cairo, Egypt</span>
+                        </div>
+                        <div class="quick-info-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Ain Shams University</span>
+                        </div>
+                        <div class="quick-info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>yousefmalak55@gmail.com</span>
+                        </div>
+                        <div class="quick-info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+20 127 541 614</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p class="about-main-text">
+                        I'm a passionate <span class="highlight">AI Engineer</span> and Machine Learning Developer 
+                        currently pursuing my Bachelor's in Computer Science at Ain Shams University. 
+                        With a strong foundation in building production-ready AI systems, I specialize in 
+                        creating intelligent multi-agent architectures, knowledge graphs, and scalable ML pipelines.
+                    </p>
+                    <p class="about-main-text">
+                        Currently working at <span class="highlight">Wider</span>, a multinational company, 
+                        where I build and deploy backend AI agent infrastructure handling production authentication 
+                        flows and semantic metadata enrichment using LLM extraction pipelines.
+                    </p>
+                    <p class="about-main-text">
+                        As <span class="highlight">Head of AI at iCLUB</span>, I lead strategic AI initiatives, 
+                        organize workshops on generative AI and model deployment, and mentor the next generation 
+                        of AI developers.
+                    </p>
+                    <div class="about-languages">
+                        <h4>Languages</h4>
+                        <div class="language-bar">
+                            <div class="lang-item">
+                                <span>Arabic</span>
+                                <div class="lang-progress"><div class="lang-fill native"></div></div>
+                                <span>Native</span>
+                            </div>
+                            <div class="lang-item">
+                                <span>English</span>
+                                <div class="lang-progress"><div class="lang-fill fluent"></div></div>
+                                <span>Fluent</span>
+                            </div>
+                            <div class="lang-item">
+                                <span>German</span>
+                                <div class="lang-progress"><div class="lang-fill good"></div></div>
+                                <span>Good</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Professional Journey</span>
+                <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025 — Present</div>
+                        <h3 class="timeline-title">AI Engineer</h3>
+                        <h4 class="timeline-company">Wider (Multinational Company)</h4>
+                        <ul class="timeline-details">
+                            <li>Built and deployed backend AI agent infrastructure handling production authentication flows</li>
+                            <li>Implemented Knowledge Graph systems with semantic metadata enrichment using LLM extraction pipelines</li>
+                            <li>Integrated LangChain-based agents communicating with graph services via REST APIs</li>
+                            <li>Collaborated with cross-functional teams on multi-agent system architecture and deployment</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 — Present</div>
+                        <h3 class="timeline-title">Head of AI</h3>
+                        <h4 class="timeline-company">iCLUB (Student Club) — Ain Shams University</h4>
+                        <ul class="timeline-details">
+                            <li>Led strategic AI initiatives and organized workshops on generative AI, deployment, and ethics</li>
+                            <li>Mentored members in Python, TensorFlow, and cloud-based ML pipeline development</li>
+                            <li>Integrated AI solutions into club-led tech products and demos</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 — 2027</div>
+                        <h3 class="timeline-title">Bachelor of Computer Science</h3>
+                        <h4 class="timeline-company">Ain Shams University — Software Engineering</h4>
+                        <p class="timeline-desc">GPA: 3.4 / 4.0 (Very Good)</p>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Feb 2026</div>
+                        <h3 class="timeline-title">AI Agent Developer Course</h3>
+                        <h4 class="timeline-company">Orange Digital Center</h4>
+                        <p class="timeline-desc">Grade: <strong>99.3%</strong> | 30 Hours | AI Agents, LLMs, LangChain, RAG, Multi-Agent Systems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-file-medical-alt"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/USIF-Andreas/Sadeed" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Sadeed — AI Claim Management System</h3>
+                    <p class="project-desc">
+                        Multi-agent LangGraph pipeline (Extractor → Investigator → Resolver → Explainer) 
+                        for automated claim triage and resolution with semantic deduplication using pgvector 
+                        HNSW indices and multilingual embeddings.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Django</span>
+                        <span class="tag">LangGraph</span>
+                        <span class="tag">pgvector</span>
+                        <span class="tag">Celery</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">Docker</span>
+                    </div>
+                    <div class="project-features">
+                        <span class="feature"><i class="fas fa-check"></i> Smart LLM routing via OpenRouter</span>
+                        <span class="feature"><i class="fas fa-check"></i> Fraud detection engine</span>
+                        <span class="feature"><i class="fas fa-check"></i> Auto-retraining pipeline</span>
+                        <span class="feature"><i class="fas fa-check"></i> K-Means clustering analytics</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-plane"></i></div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">AI Travel Reservation Chatbot</h3>
+                    <p class="project-desc">
+                        Automated chatbot integrating multiple flight and hotel reservation APIs 
+                        for real-time booking with workflow automation pipelines using n8n.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">n8n</span>
+                        <span class="tag">API Integration</span>
+                        <span class="tag">Chatbot</span>
+                    </div>
+                    <div class="project-features">
+                        <span class="feature"><i class="fas fa-check"></i> Real-time booking</span>
+                        <span class="feature"><i class="fas fa-check"></i> API orchestration</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Online Exam Management System</h3>
+                    <p class="project-desc">
+                        Desktop application for creating and managing exams with automated grading, 
+                        user authentication, and performance tracking using OOP principles.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">JavaFX</span>
+                        <span class="tag">Maven</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-satellite"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/abdallahade1/GTC-Land-Type-Classification" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Land Type Classification — Satellite Imagery</h3>
+                    <p class="project-desc">
+                        Compared ResNet50 (81.9%) vs EfficientNetB0 (96.3%) on NWPU-RESISC45 dataset 
+                        for multi-class land cover detection using transfer learning.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">TensorFlow</span>
+                        <span class="tag">Sentinel-2</span>
+                    </div>
+                    <div class="project-features">
+                        <span class="feature"><i class="fas fa-check"></i> 96.3% accuracy achieved</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-tree"></i></div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Forest Cover Type Prediction</h3>
+                    <p class="project-desc">
+                        Multi-class classification using XGBoost achieving 86.6% accuracy 
+                        with engineered interaction features for improved predictive performance.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">XGBoost</span>
+                        <span class="tag">Classification</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Walmart Sales Forecasting</h3>
+                    <p class="project-desc">
+                        Time series forecasting with LightGBM predicting weekly sales (MAE ≈ $7,277) 
+                        using rolling averages and TimeSeriesSplit cross-validation.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">LightGBM</span>
+                        <span class="tag">Time Series</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-heartbeat"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/USIF-Andreas/Diabetes-Prediction-Model" target="_blank" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Diabetes Prediction Model</h3>
+                    <p class="project-desc">
+                        Applied SMOTE balancing and trained Logistic Regression, SVM, and Random Forest 
+                        achieving 76% accuracy for diabetes prediction.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">SMOTE</span>
+                        <span class="tag">Classification</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-th"></i></div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Mall Customer Segmentation</h3>
+                    <p class="project-desc">
+                        Segmented customers into 5 clusters via Elbow method with K-Means, 
+                        visualizing spending vs. income patterns.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">K-Means</span>
+                        <span class="tag">Clustering</span>
+                    </div>
+                </div>
+
+                <div class="project-card animate-on-scroll">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-palette"></i></div>
+                        <div class="project-links">
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Image Segmentation App</h3>
+                    <p class="project-desc">
+                        Graph-based segmentation with Gaussian smoothing, parallel RGB processing, 
+                        and multi-format export capabilities.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">C#</span>
+                        <span class="tag">Windows Forms</span>
+                        <span class="tag">DSU</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What I Use</span>
+                <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon"><i class="fas fa-robot"></i></div>
+                    <h3>AI & Agents</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">LangGraph</span>
+                        <span class="skill-tag">Multi-Agent Systems</span>
+                        <span class="skill-tag">RAG</span>
+                        <span class="skill-tag">Prompt Engineering</span>
+                        <span class="skill-tag">Knowledge Graphs</span>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon"><i class="fas fa-cogs"></i></div>
+                    <h3>Machine Learning</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">XGBoost</span>
+                        <span class="skill-tag">LightGBM</span>
+                        <span class="skill-tag">SMOTE</span>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon"><i class="fas fa-server"></i></div>
+                    <h3>Backend</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Authentication</span>
+                        <span class="skill-tag">Modular Architecture</span>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon"><i class="fas fa-database"></i></div>
+                    <h3>Data & Vector</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">pgvector</span>
+                        <span class="skill-tag">Qdrant</span>
+                        <span class="skill-tag">Supabase</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">Redis</span>
+                        <span class="skill-tag">Celery</span>
+                        <span class="skill-tag">Docker</span>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Automation</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">n8n</span>
+                        <span class="skill-tag">API Orchestration</span>
+                        <span class="skill-tag">Chatbot Pipelines</span>
+                        <span class="skill-tag">Low-Code Workflows</span>
+                    </div>
+                </div>
+                <div class="skill-category animate-on-scroll">
+                    <div class="skill-category-icon"><i class="fas fa-code"></i></div>
+                    <h3>Languages & Tools</h3>
+                    <div class="skill-items">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Jupyter</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">Seaborn</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Let's Connect</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <p class="contact-intro">
+                        I'm always interested in hearing about new opportunities, collaborations, 
+                        or just having a great conversation about AI and technology.
+                    </p>
+                    <div class="contact-items">
+                        <a href="mailto:yousefmalak55@gmail.com" class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value">yousefmalak55@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+20127541614" class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <span class="contact-label">Phone</span>
+                                <span class="contact-value">+20 127 541 614</span>
+                            </div>
+                        </a>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <span class="contact-label">Location</span>
+                                <span class="contact-value">Maadi, Cairo, Egypt</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/usif-malak-98026b287" target="_blank" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/USIF-Andreas" target="_blank" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder=" " required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder=" " required rows="5"></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-y">Y</span>MI
+                </div>
+                <p class="footer-text">
+                    Built with passion by Yousef Malak Ibrahim &hearts;
+                </p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/usif-malak-98026b287" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/USIF-Andreas" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- AI Chatbot Widget -->
+    <script src="chatbot/chatbot-widget.js"></script>
+</body>
+</html>

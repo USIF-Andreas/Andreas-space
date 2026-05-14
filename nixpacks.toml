@@ -1,0 +1,14 @@
+[providers]
+node = true
+
+[phases.setup]
+nixPkgs = ["nodejs"]
+
+[phases.install]
+cmds = ["cd portfolio/chatbot && npm install"]
+
+[phases.build]
+cmds = ["cd portfolio/chatbot && npm run build"]
+
+[start]
+cmd = "cd portfolio/chatbot && npm run start:prod"
